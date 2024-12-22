@@ -11,3 +11,4 @@ Le template possède la structure suivante :
 - `build/` : dossier contenant tous les fichiers dû à la compilation. Devrait contenir tous les pdfs produits (main.pdf : le document entier; intro.pdf, theorie.pdf, etc pour les fichiers individuels).
 - Chaque partie du document est placé dans un dossier comportant le fichier .tex ainsi qu'un dossier `img/` pour les images. 
 
+- `.vscode` contient les fichiers de configuration pour vscode. 
