@@ -1,0 +1,18 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\ifSubfilesClassLoaded{
+   % things to include before standalone document  
+}{}
+\chapter{Théorie}
+\subsection{Mes calculs}
+\begin{figure}[h]
+   \centering
+    \includegraphics[width=0.9\textwidth]{cat_th.jpg}
+   \caption{Chat de théorie}
+   \label{fig:chat_theorie}
+\end{figure}
+\ifSubfilesClassLoaded{% 
+   % things to include after standalone document  
+    \printbibliography%
+}{}
+\end{document}

@@ -1,0 +1,18 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\ifSubfilesClassLoaded{
+   % things to include before standalone document  
+}{}
+\chapter{Introduction}
+Mon introduction.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{chat_intro.jpg}
+    \caption{Chat d'introduction}
+    \label{fig:chat_intro}
+\end{figure}
+\ifSubfilesClassLoaded{% 
+   % things to include after standalone document  
+    \printbibliography
+}{}
+\end{document}

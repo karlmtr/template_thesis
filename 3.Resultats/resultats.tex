@@ -1,0 +1,20 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\ifSubfilesClassLoaded{
+   % things to include before standalone document  
+}{}
+\chapter{Résultats}
+
+Super résultats, selon \cite{einstein}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{cat_res.jpg}
+    \caption{Chat de résultats}
+    \label{fig:chat_res}
+\end{figure}
+\ifSubfilesClassLoaded{% 
+   % things to include after standalone document  
+    \printbibliography%
+}{}
+\end{document}

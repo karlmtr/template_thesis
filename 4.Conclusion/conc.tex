@@ -1,0 +1,20 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\ifSubfilesClassLoaded{
+   % things to include before standalone document  
+}{}
+\chapter{Conclusion}
+En somme, ça s'est bien passé.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{dobby.jpg}
+    \caption{Définitivement pas un chat !}
+    \label{fig:dobby}
+\end{figure}
+\ifSubfilesClassLoaded{% 
+
+   % things to include after standalone document  
+    \printbibliography%
+}{}
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage{graphicx}
+\usepackage[l2tabu, orthodox]{nag} % tells you of any bad LaTeX usage
+
+% \usepackage{placeins}
+% Defines a \FloatBarrier command, beyond which floats may not pass; useful, for example, to ensure all floats for a section appear before the next \section command
+
+\usepackage{csquotes}
+
+
+\usepackage[backend=biber, style=numeric, sorting=none, giveninits=true, eprint=false, url=false, doi=true,isbn=true, sortcites]{biblatex}
+\usepackage[outputdir=./build]{minted}
+
+
+
+
+% on ajoute les dossiers dans lesquels chercher les images : 
+\graphicspath{{./img}
+    {1.Intro/img}
+    {2.Theorie/img}
+    {3.Resultats/img}
+    {4.Conclusion/img}
+}   
+
+%%% informations page de garde
+%%% 
+\addbibresource{biblio_biblatex.bib}
+
+\begin{document}
+\frontmatter
+%%% Page de garde (à customiser) %%%
+\title{Super titre}
+\author{Harry Potter}
+\date{\today}
+\maketitle
+%%%%%%
+\mainmatter
+\subfile{1.Intro/intro.tex}
+\subfile{2.Theorie/theorie.tex}
+\subfile{3.Resultats/resultats.tex}
+\subfile{4.Conclusion/conc.tex}
+\backmatter
+\printbibliography
+\end{document}
